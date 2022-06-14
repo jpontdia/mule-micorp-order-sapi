@@ -1,4 +1,4 @@
-# mule-micorp-orderß-sapi
+# mule-micorp-order-sapi
 > Mulesoft Demo System API - Micorp Salesforce Order Repository
 
 ## Table of contents
