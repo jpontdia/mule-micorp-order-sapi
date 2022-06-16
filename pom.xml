@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>078efef1-d139-48ed-92f5-f8d4a0592374</groupId>
 		<artifactId>micorp-pom</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.2</version>
 		<relativePath/>
 		<!--  <relativePath>../mule-micorp-pom-test/pom.xml</relativePath> -->
 	</parent>
@@ -21,10 +21,10 @@
 		<!-- Visualizer properties -->
 		<api.layer>system</api.layer>
 
-		<!-- API Spec Rest Connector: customer-item-sapi -->
+		<!-- API Spec Rest Connector: micorp-order-sapi -->
 		<restconnector.api.spec.group>${project.groupId}</restconnector.api.spec.group>
 		<restconnector.api.spec.artifact>micorp-order-sapi</restconnector.api.spec.artifact>
-		<restconnector.api.spec.version>1.0.0</restconnector.api.spec.version>
+		<restconnector.api.spec.version>1.0.1</restconnector.api.spec.version>
 	</properties>
 
 	<build>
@@ -46,7 +46,7 @@
 	<dependencies>
 		<!-- Service Dependencies  -->
 		
-		<!-- RAML: Micorp Order SAPI -->
+		<!-- RAML: micorp-order-sapi -->
 		<dependency>
 			<groupId>${restconnector.api.spec.group}</groupId>
 			<artifactId>${restconnector.api.spec.artifact}</artifactId>
@@ -80,13 +80,4 @@
 		</dependency>
 
 	</dependencies>
-	<repositories>
-		<repository>
-			<id>anypoint-exchange-v3</id>
-			<name>Anypoint Exchange V3</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
-			<layout>default</layout>
-		</repository>
-	</repositories>
-
 </project>
